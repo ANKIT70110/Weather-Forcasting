@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Weather Forecast Application";
+}
+
+<head>
+
+    <style>
+        .weather-card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        .weather-section {
+            text-align: center;
+            padding: 20px;
+            background-color: wheat;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+            .weather-section h1 {
+                margin-bottom: 20px;
+                color: black;
+                
+            }
+
+        .weather-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .weather-card {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            width: 18%;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+            .weather-card .day {
+                font-weight: bold;
+                font-size: .94em;
+            }
+
+            .weather-card .temp {
+                font-size: 1.5em;
+                margin-top: 5px;
+            }
+
+            .weather-card.bg-light {
+                background-color: #e0e0e0;
+                color: black; 
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">WeatherApp</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Weather Forecast Application</h1>
+
+        <div class="col-md-6">
+            <div class="weather-card bg-light">
+                <h4>Current Weather</h4>
+                <p>
+                    Delhi 20 <sup>°</sup>C
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="weather-section">
+        <h1>5-Day Temperature Forecast</h1>
+        <div class="weather-cards">
+            <div class="weather-card">
+                <p class="day">Monday</p>
+                <p class="temp">25°C</p>
+            </div>
+            <div class="weather-card">
+                <p class="day">Tuesday</p>
+                <p class="temp">27°C</p>
+            </div>
+            <div class="weather-card">
+                <p class="day">Wednesday</p>
+                <p class="temp">23°C</p>
+            </div>
+            <div class="weather-card">
+                <p class="day">Thursday</p>
+                <p class="temp">26°C</p>
+            </div>
+            <div class="weather-card">
+                <p class="day">Friday</p>
+                <p class="temp">28°C</p>
+            </div>
+        </div>
+    </section>
+</body>
