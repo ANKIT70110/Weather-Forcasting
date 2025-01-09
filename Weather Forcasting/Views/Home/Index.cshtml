@@ -5,25 +5,21 @@
 <head>
 
     <style>
-        .weather-card {
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background-image: url('https://as2.ftcdn.net/v2/jpg/03/13/89/81/1000_F_313898173_HZ9ZUCsWOkqkao7fXdm7D7QBtEmCdf8l.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: #333;
         }
 
         .weather-section {
             text-align: center;
             padding: 20px;
-            background-color: wheat;
+            background-color: rgba(255, 222, 173, 0.8);
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 90%;
@@ -34,7 +30,6 @@
             .weather-section h1 {
                 margin-bottom: 20px;
                 color: black;
-                
             }
 
         .weather-cards {
@@ -52,7 +47,6 @@
             width: 18%;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
         }
 
             .weather-card .day {
@@ -67,7 +61,7 @@
 
             .weather-card.bg-light {
                 background-color: #e0e0e0;
-                color: black; 
+                color: black;
                 padding: 15px;
                 border-radius: 8px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -79,6 +73,12 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="/">WeatherApp</a>
         </div>
+        <div class="topnav">
+       
+
+
+        <input type="text" placeholder="Search City.">
+        </div>
     </nav>
 
     <div class="container mt-4">
@@ -87,6 +87,7 @@
         <div class="col-md-6">
             <div class="weather-card bg-light">
                 <h4>Current Weather</h4>
+              
                 <p>
                     Delhi 20 <sup>°</sup>C
                 </p>
